@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos/formulario.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="formulario.html">Gestión Usuarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+ 
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Gestión Usuarios</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <form id="formularioUsuario">
+
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre">
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario" name="usuario">
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label for="fechaIngreso" class="form-label">Fecha Ingreso</label>
+                                    <input type="date" class="form-control" id="fechaIngreso" name="fechaIngreso" 
+                                           placeholder="dd/MM/yyyy">
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="genero" class="form-label">Género</label>
+                                    <select class="form-select" id="genero" name="genero">
+                                        <option value="">Seleccione...</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="otro">Otro</option>
+                                        <option value="no-especifica">Prefiero no especificar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="email" name="email" 
+                                           placeholder="ejemplo@dominio.com">
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="sitioWeb" class="form-label">Sitio Web</label>
+                                    <input type="text" class="form-control" id="sitioWeb" name="sitioWeb" 
+                                           placeholder="https://ejemplo.com">
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-12 text-end">
+                                    <button type="button" class="btn btn-secondary me-2" id="btnCancelar">
+                                        Cancelar
+                                    </button>
+                                    <button type="submit" class="btn btn-primary" id="btnGuardar">
+                                        Guardar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
